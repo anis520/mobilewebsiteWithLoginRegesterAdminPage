@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+
+   <!-- header  start-->
+
+
+  <header class="py-3 shadow-sm bg-white">  
+
+     <div class="container flex items-center justify-between">
+
+          <!-- logo  -->
+            <!-- <a href="#"><img class="w-32 "  src="/images/logo2.png"alt="mobile side"></a> -->
+             
+            <a href="#" class="text-black text-2xl font-extrabold">MOBILE<span class="text-red-500 ml-2 ">VAi</span></a>
+
+          <!-- serch bar -->
+         <div class="w-full max-w-xl relative flex">
+
+             <span class="absolute    left-4 top-2 text-lg text-gray-400">
+                <i class="fa-brands fa-searchengin"></i>
+             </span>
+
+             <input type="text" class=" w-full border border-red-500 border-r-0 pl-12 py-2 pr-3 rounded-l-md  focus:outline-none  " placeholder="search">
+             <button class="bg-red-500  border border-red-500 text-white   px-8 rounded-r-md hover:bg-transparent hover:text-red-500 transition ">Search</button>
+
+         </div>
+
+          <!-- icon -->
+           
+          <div class="flex items-center space-x-4">
+
+               <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                     
+                  <div class="text-xl"> 
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                    <div class="text-xs leading-3 font-bold">
+                          Wish List
+                    </div>
+                    <span class="absolute right-1 -top-1 flex rounded-full w-4 h-4 bg-red-500 items-center justify-center text-white text-xs">3</span>
+               </a>
+               <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                     
+                  <div class="text-xl"> 
+                    <i class="fa-regular fa-address-card"></i>
+                  </div>
+                    <div class="text-xs leading-3 font-bold">
+                          Cart
+                    </div>
+                    <span class="absolute -right-3 -top-1 flex rounded-full w-4 h-4 bg-red-500 items-center justify-center text-white text-xs">3</span>
+               </a>
+               <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                     
+                  <div class="text-xl"> 
+                    <i class="fa-regular fa-user"></i>
+                  </div>
+                    <div class="text-xs leading-3  font-bold">
+                        Account
+                    </div>
+               </a>
+
+          </div>
+
+
+     </div>
+
+  </header>
+
+
+   <!-- header    end-->
+
+
+
+   <!-- navbar  -->
+
+         <nav class="bg-gray-800">
+
+                <div class="container flex">
+                          
+                 <!-- all category -->
+             
+                     <div class="px-8 relative   py-3 bg-red-500 flex items-center cursor-pointer group">
+                         <span class="text-white">
+                             <i class="fas fa-bars"></i>
+                         </span>
+                         <span class="capitalize ml-2 text-white">All Brands</span>
+                        
+                         <div class="absolute opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300 w-full left-0 top-full py-2 bg-white shadow-md divide-y divide-gray-300 divide-dashed">
+                                 <a href="#" class="flex transition  hover:bg-gray-100  px-6 py-2 items-center">
+
+                                      <img src="/images/all brands/Apple-Logo.png" class="w-8 h-8 object-contain" alt="">
+                                      <span class="ml-2 text-gray-600 text-sm">Apple</span>
+
+                                 </a>
+                                 <a href="#" class="flex  transition  hover:bg-gray-100 px-6 py-2 items-center">
+
+                                      <img src="/images/all brands/Xiaomi_logo_(2021-).svg.png" class="w-5 ml-1 h-5 object-contain" alt="">
+                                      <span class="ml-4 text-gray-600 text-sm">Xiami</span>
+
+                                 </a>
+                                 <a href="#" class="flex  transition   hover:bg-gray-100 px-6 py-2 items-center">
+
+                                      <img src="/images/all brands/realme-logo-1553507714.jpg" class="w-5 ml-1 mr-1 h-6 object-contain" alt="">
+                                      <span class="ml-2 text-gray-600 text-sm">Realme</span>
+
+                                 </a>
+                                 <a href="#" class="flex transition     hover:bg-gray-100 px-6 py-2 items-center">
+
+                                      <img src="/images/all brands/vivo.cms" class="w-5 h-5 ml-1 mr-2  object-contain" alt="">
+                                      <span class="ml-2 text-gray-600 text-sm">Vivo</span>
+
+                                 </a>
+                                 <a href="#" class="flex transition  hover:bg-gray-100 px-6 py-2 items-center">
+
+                                      <img src="/images/all brands/oppo.png" class="w-5 h-5 ml-1 mr-2  object-contain" alt="">
+                                      <span class="ml-2 text-gray-600 text-sm">Oppo</span>
+
+                                 </a>
+                                                               
+                         </div>
+
+                     </div>
+                                  
+                 <!-- all category end-->
+
+                  <!-- navbar links -->
+                      <div class="flex items-center flex-grow justify-between pl-12">
+                               
+                              <div class="flex items-center space-x-6 capitalize">
+                                      <a href="index.html" class="text-gray-200 hover:text-white transition">Home</a>
+                                      <a href="shop.html" class="text-gray-200 hover:text-white transition">shop</a>
+                                      <a href="#" class="text-gray-200 hover:text-white transition">about us</a>
+                                      <a href="#" class="text-gray-200 hover:text-white transition">contact us</a>
+                              </div>
+                              <div class="text-gray-200"><a href="login.html" class=" hover:text-white transition">Login </a>/<a href="regester.html"> Register</a></div>  
+                      </div>
+                </div>
+               
+         </nav> 
+
+   <!-- navbar end -->
+
+
+
+
+      <!-- product wraper -->
+
+
+
+      <div class="container pb-16 ">
+
+
+        <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">All Mobile</h2>
+           
+         <!-- product grid -->
+
+           <div class="grid grid-cols-4 gap-6">
+                  <!-- single pruducts -->
+                          
+                     <div class="bg-white shadow rounded overflow-hidden ">
+                             
+                          <div class="relative group">
+                              <img src="/images/hot mobile/Xiaomi-Redmi-Note-11.jpg" class="w-full" alt="">
+                              <div class="absolute inset-0 gap-2  bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-heart"></i></a>
+                              </div>
+                          </div>
+                          <!-- deaties -->
+                          <div class="pt-4 pb-3 px-4">
+                                <a href="#" class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-red-500 transition">Xiaomi-Redmi-Note-11</a>
+                                <div class="flex items-baseline mb-1 space-x-2">
+                                 <p class="text-red-500 font-semibold text-xl ">18000Tk</p>
+                                 <p class="to-gray-400 line-through font-semibold text-sm ">20000Tk</p>
+                                    
+                                </div>
+                                <div class="flex items-center ">
+                                       <div class="flex gap-1 text-sm text-yellow-400">
+                                              <span><i class="fa-solid fa-star"></i></span>
+                                              <span><i class="fa-solid fa-star"></i></span>
+                                              <span><i class="fa-solid fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                       </div>
+                                       <div class="text-xs text-gray-500 ml-3">(23)</div>
+                                </div>
+                               </div>
+                               <a href="#" class="block w-full py-1 text-center text-white bg-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition">Add to cart</a>
+
+
+                     </div>
+                  <!-- single pruducts end -->
+                  <!-- single pruducts -->
+                          
+                     <div class="bg-white shadow rounded overflow-hidden ">
+                             
+                          <div class="relative group">
+                              <img src="/images/hot mobile/Xiaomi-Redmi-Note-11.jpg" class="w-full" alt="">
+                              <div class="absolute inset-0 gap-2  bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-heart"></i></a>
+                              </div>
+                          </div>
+                          <!-- deaties -->
+                          <div class="pt-4 pb-3 px-4">
+                                <a href="#" class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-red-500 transition">Xiaomi-Redmi-Note-11</a>
+                                <div class="flex items-baseline mb-1 space-x-2">
+                                 <p class="text-red-500 font-semibold text-xl ">18000Tk</p>
+                                 <p class="to-gray-400 line-through font-semibold text-sm ">20000Tk</p>
+                                    
+                                </div>
+                                <div class="flex items-center ">
+                                       <div class="flex gap-1 text-sm text-yellow-400">
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                       </div>
+                                       <div class="text-xs text-gray-500 ml-3">(23)</div>
+                                </div>
+                               </div>
+                               <a href="#" class="block w-full py-1 text-center text-white bg-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition">Add to cart</a>
+
+
+                     </div>
+                  <!-- single pruducts end -->
+                  <!-- single pruducts -->
+                          
+                     <div class="bg-white shadow rounded overflow-hidden ">
+                             
+                          <div class="relative group">
+                              <img src="/images/hot mobile/Xiaomi-Redmi-Note-11.jpg" class="w-full" alt="">
+                              <div class="absolute inset-0 gap-2  bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-heart"></i></a>
+                              </div>
+                          </div>
+                          <!-- deaties -->
+                          <div class="pt-4 pb-3 px-4">
+                                <a href="#" class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-red-500 transition">Xiaomi-Redmi-Note-11</a>
+                                <div class="flex items-baseline mb-1 space-x-2">
+                                 <p class="text-red-500 font-semibold text-xl ">18000Tk</p>
+                                 <p class="to-gray-400 line-through font-semibold text-sm ">20000Tk</p>
+                                    
+                                </div>
+                                <div class="flex items-center ">
+                                       <div class="flex gap-1 text-sm text-yellow-400">
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                       </div>
+                                       <div class="text-xs text-gray-500 ml-3">(23)</div>
+                                </div>
+                               </div>
+                               <a href="#" class="block w-full py-1 text-center text-white bg-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition">Add to cart</a>
+
+
+                     </div>
+                  <!-- single pruducts end -->
+                  <!-- single pruducts -->
+                          
+                     <div class="bg-white shadow rounded overflow-hidden ">
+                             
+                          <div class="relative group">
+                              <img src="/images/hot mobile/Xiaomi-Redmi-Note-11.jpg" class="w-full" alt="">
+                              <div class="absolute inset-0 gap-2  bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-heart"></i></a>
+                              </div>
+                          </div>
+                          <!-- deaties -->
+                          <div class="pt-4 pb-3 px-4">
+                                <a href="#" class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-red-500 transition">Xiaomi-Redmi-Note-11</a>
+                                <div class="flex items-baseline mb-1 space-x-2">
+                                 <p class="text-red-500 font-semibold text-xl ">18000Tk</p>
+                                 <p class="to-gray-400 line-through font-semibold text-sm ">20000Tk</p>
+                                    
+                                </div>
+                                <div class="flex items-center ">
+                                       <div class="flex gap-1 text-sm text-yellow-400">
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                       </div>
+                                       <div class="text-xs text-gray-500 ml-3">(23)</div>
+                                </div>
+                               </div>
+                               <a href="#" class="block w-full py-1 text-center text-white bg-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition">Add to cart</a>
+
+
+                     </div>
+                  <!-- single pruducts end -->
+                  <!-- single pruducts -->
+                          
+                     <div class="bg-white shadow rounded overflow-hidden ">
+                             
+                          <div class="relative group">
+                              <img src="/images/hot mobile/Xiaomi-Redmi-Note-11.jpg" class="w-full" alt="">
+                              <div class="absolute inset-0 gap-2  bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-heart"></i></a>
+                              </div>
+                          </div>
+                          <!-- deaties -->
+                          <div class="pt-4 pb-3 px-4">
+                                <a href="#" class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-red-500 transition">Xiaomi-Redmi-Note-11</a>
+                                <div class="flex items-baseline mb-1 space-x-2">
+                                 <p class="text-red-500 font-semibold text-xl ">18000Tk</p>
+                                 <p class="to-gray-400 line-through font-semibold text-sm ">20000Tk</p>
+                                    
+                                </div>
+                                <div class="flex items-center ">
+                                       <div class="flex gap-1 text-sm text-yellow-400">
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                       </div>
+                                       <div class="text-xs text-gray-500 ml-3">(23)</div>
+                                </div>
+                               </div>
+                               <a href="#" class="block w-full py-1 text-center text-white bg-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition">Add to cart</a>
+
+
+                     </div>
+                  <!-- single pruducts end -->
+                  <!-- single pruducts -->
+                          
+                     <div class="bg-white shadow rounded overflow-hidden ">
+                             
+                          <div class="relative group">
+                              <img src="/images/hot mobile/Xiaomi-Redmi-Note-11.jpg" class="w-full" alt="">
+                              <div class="absolute inset-0 gap-2  bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-heart"></i></a>
+                              </div>
+                          </div>
+                          <!-- deaties -->
+                          <div class="pt-4 pb-3 px-4">
+                                <a href="#" class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-red-500 transition">Xiaomi-Redmi-Note-11</a>
+                                <div class="flex items-baseline mb-1 space-x-2">
+                                 <p class="text-red-500 font-semibold text-xl ">18000Tk</p>
+                                 <p class="to-gray-400 line-through font-semibold text-sm ">20000Tk</p>
+                                    
+                                </div>
+                                <div class="flex items-center ">
+                                       <div class="flex gap-1 text-sm text-yellow-400">
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                       </div>
+                                       <div class="text-xs text-gray-500 ml-3">(23)</div>
+                                </div>
+                               </div>
+                               <a href="#" class="block w-full py-1 text-center text-white bg-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition">Add to cart</a>
+
+
+                     </div>
+                  <!-- single pruducts end -->
+                  <!-- single pruducts -->
+                          
+                     <div class="bg-white shadow rounded overflow-hidden ">
+                             
+                          <div class="relative group">
+                              <img src="/images/hot mobile/Xiaomi-Redmi-Note-11.jpg" class="w-full" alt="">
+                              <div class="absolute inset-0 gap-2  bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-heart"></i></a>
+                              </div>
+                          </div>
+                          <!-- deaties -->
+                          <div class="pt-4 pb-3 px-4">
+                                <a href="#" class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-red-500 transition">Xiaomi-Redmi-Note-11</a>
+                                <div class="flex items-baseline mb-1 space-x-2">
+                                 <p class="text-red-500 font-semibold text-xl ">18000Tk</p>
+                                 <p class="to-gray-400 line-through font-semibold text-sm ">20000Tk</p>
+                                    
+                                </div>
+                                <div class="flex items-center ">
+                                       <div class="flex gap-1 text-sm text-yellow-400">
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                       </div>
+                                       <div class="text-xs text-gray-500 ml-3">(23)</div>
+                                </div>
+                               </div>
+                               <a href="#" class="block w-full py-1 text-center text-white bg-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition">Add to cart</a>
+
+
+                     </div>
+                  <!-- single pruducts end -->
+                  <!-- single pruducts -->
+                          
+                     <div class="bg-white shadow rounded overflow-hidden ">
+                             
+                          <div class="relative group">
+                              <img src="/images/hot mobile/Xiaomi-Redmi-Note-11.jpg" class="w-full" alt="">
+                              <div class="absolute inset-0 gap-2  bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                                    <a href="#" class="text-white text-lg w-9  h-9 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"><i class="fas fa-heart"></i></a>
+                              </div>
+                          </div>
+                          <!-- deaties -->
+                          <div class="pt-4 pb-3 px-4">
+                                <a href="#" class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-red-500 transition">Xiaomi-Redmi-Note-11</a>
+                                <div class="flex items-baseline mb-1 space-x-2">
+                                 <p class="text-red-500 font-semibold text-xl ">18000Tk</p>
+                                 <p class="to-gray-400 line-through font-semibold text-sm ">20000Tk</p>
+                                    
+                                </div>
+                                <div class="flex items-center ">
+                                       <div class="flex gap-1 text-sm text-yellow-400">
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                              <span><i class="fa-regular fa-star"></i></span>
+                                       </div>
+                                       <div class="text-xs text-gray-500 ml-3">(23)</div>
+                                </div>
+                               </div>
+                               <a href="#" class="block w-full py-1 text-center text-white bg-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition">Add to cart</a>
+
+
+                     </div>
+                  <!-- single pruducts end -->
+                 
+
+           </div>
+
+         <!-- product grid end-->
+         
+  </div>     
+
+
+
+<!-- product wraper end -->
+
+
+
+
+ <!-- footer -->
+
+
+ <footer class="bg-gray-800 mt-10  py-2">
+    <div class="container flex justify-between">
+      <div class="text-white text-sm items-center "><p>@ Moble vai-All Right Reserved</p></div>
+      <div class="" ><img src="/images/vasa cardifdddd.jpg" class="w-auto  h-5 bg-gray-800" alt=""></div>
+
+    </div>
+   
+   </footer>
+
+<!-- footer end -->
+
+ 
+
+
+   </body>
+
+
+   </html>

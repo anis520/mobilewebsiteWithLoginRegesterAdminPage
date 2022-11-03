@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="h-screen" style=" background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);">
+ <div class="flex justify-between h-14">
+     <a href="index.html"><div class="h-12 text-lg ring-4 ring-violet-400 ring-offset-4 ring-offset-fuchsia-300 flex items-center justify-center rounded-3xl w-16 bg-violet-400 text-violet-800 m-10"><i class="fa-solid fa-house"></i></div></a>
+     <a href="login.html"><div class="h-12 text-sm font-semibold ring-4 ring-violet-400 ring-offset-4 ring-offset-sky-300 flex items-center justify-center rounded-3xl w-16 bg-violet-400 text-violet-800 m-10">Login</div></a>
+     
+ </div>
+
+
+
+ <div class="container    w-screen h-96 mt-36 flex  items-end  justify-center">
+
+
+
+
+
+ <div class="h-32 w-32  text-5xl items-center justify-center flex rounded-full bg-violet-400   text-violet-800 absolute ml-14 mt-2 top-0 "><i class="fa-regular fa-user"></i></div>
+<div class="ml-14  w-96 h-min    flex justify-center  items-center  border rounded-3xl bg-slate-300 shadow-2xl"  >
+     
+   
+<div class=" space-y-3 mt-10 ">
+     <div class="flex  w-full mt-20">
+    
+
+       
+        <div class="  w-9 h-10 rounded-l-md bg-violet-800 flex justify-center text-violet-400 items-center">
+            <i class="fa-solid fa-envelope"></i>
+
+        </div>
+            <form action="">
+        <input type="email" class="w-64  rounded-r-md focus:outline-none pl-3 h-10 bg-violet-400 text-gray-700 font-bold placeholder:text-gray-700 " placeholder="Email">
+    </div>
+     
+     <div class="flex  ">
+        <div class="  w-9 h-10 rounded-l-md bg-violet-800 flex justify-center text-violet-400 items-center">
+        <i class="fa-solid fa-user   "></i>
+
+        </div>
+        <input type="text"  class="w-64 rounded-r-md h-10 focus:outline-none pl-3  bg-violet-400 text-gray-700 font-bold placeholder:text-gray-700  " placeholder="User name">  
+    </div>
+     <div class="flex  ">
+        <div class="  w-9 h-10 rounded-l-md bg-violet-800 flex justify-center text-violet-400 items-center">
+            <i class="fa-solid fa-lock"></i>
+
+        </div>
+        <input type="password"  class="w-64 rounded-r-md h-10 focus:outline-none pl-3  bg-violet-400 text-gray-700 font-bold placeholder:text-gray-700  " placeholder="Enter password">  
+    </div>
+     <div class="flex  ">
+        <div class="  w-9 h-10 rounded-l-md bg-violet-800 flex justify-center text-violet-400 items-center">
+            <i class="fa-solid fa-lock"></i>
+
+        </div>
+        <input type="password"  class="w-64 rounded-r-md h-10 focus:outline-none pl-3  bg-violet-400 text-gray-700 font-bold placeholder:text-gray-700  " placeholder="Confrom password">  
+    </div>
+
+      <div class="h-36   mx-auto w-36">
+       <label for="img"><input id="img" class="hidden "  type="file"> <img class="min-h-full min-w-full max-h-full max-w-full object-cover rounded-full pre ring-4 hover:scale-105 hover:ring-offset-0 transition ring-violet-400 ring-offset-slate-300 ring-offset-4" src="/images/profile.jpg" alt=""></label>
+      </div>
+
+    <div class="flex  text-sm  font-semibold justify-between text-violet-800 h-14 items-end">
+        <div class="flex mb-5">
+             <span><a href="login.html">Back to login</a></span>
+        </div>
+        
+    </div>
+    
+</div>
+   
+
+      
+
+
+</div>
+
+ 
+
+ </div>
+ 
+     <div class="ml-14 ">
+     <button type="submit " class="w-64 mb-32 mx-auto mt-1 h-12 items-center flex justify-center bg-violet-400  text-violet-800  font-bold  rounded-b-3xl">Regester</button>
+           </form>
+     </div >
+    
+</body>
+<script>
+        const img =document.getElementById('img')
+            const pre =document.querySelector('.pre')
+
+
+              if(img){
+
+             
+            img.onchange=(e)=>{
+
+
+const imageLink=URL.createObjectURL(e.target.files[0]);
+
+
+pre.setAttribute('src',imageLink)
+  }
+
+
+              }
+</script>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single veiw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+
+   <!-- header  start-->
+
+
+  <header class="py-3 shadow-sm bg-white">  
+
+     <div class="container flex items-center justify-between">
+
+          <!-- logo  -->
+            <!-- <a href="#"><img class="w-32 "  src="/images/logo2.png"alt="mobile side"></a> -->
+             
+            <a href="#" class="text-black text-2xl font-extrabold">MOBILE<span class="text-red-500 ml-2 ">VAi</span></a>
+
+          <!-- serch bar -->
+         <div class="w-full max-w-xl relative flex">
+
+             <span class="absolute    left-4 top-2 text-lg text-gray-400">
+                <i class="fa-brands fa-searchengin"></i>
+             </span>
+
+             <input type="text" class=" w-full border border-red-500 border-r-0 pl-12 py-2 pr-3 rounded-l-md  focus:outline-none  " placeholder="search">
+             <button class="bg-red-500  border border-red-500 text-white   px-8 rounded-r-md hover:bg-transparent hover:text-red-500 transition ">Search</button>
+
+         </div>
+
+          <!-- icon -->
+           
+          <div class="flex items-center space-x-4">
+
+               <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                     
+                  <div class="text-xl"> 
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                    <div class="text-xs leading-3 font-bold">
+                          Wish List
+                    </div>
+                    <span class="absolute right-1 -top-1 flex rounded-full w-4 h-4 bg-red-500 items-center justify-center text-white text-xs">3</span>
+               </a>
+               <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                     
+                  <div class="text-xl"> 
+                    <i class="fa-regular fa-address-card"></i>
+                  </div>
+                    <div class="text-xs leading-3 font-bold">
+                          Cart
+                    </div>
+                    <span class="absolute -right-3 -top-1 flex rounded-full w-4 h-4 bg-red-500 items-center justify-center text-white text-xs">3</span>
+               </a>
+               <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                     
+                  <div class="text-xl"> 
+                    <i class="fa-regular fa-user"></i>
+                  </div>
+                    <div class="text-xs leading-3  font-bold">
+                        Account
+                    </div>
+               </a>
+
+          </div>
+
+
+     </div>
+
+  </header>
+
+
+   <!-- header    end-->
+
+
+
+   <!-- navbar  -->
+
+         <nav class="bg-gray-800">
+
+                <div class="container flex">
+                          
+                 <!-- all category -->
+             
+                     <div class="px-8 relative   py-3 bg-red-500 flex items-center cursor-pointer group">
+                         <span class="text-white">
+                             <i class="fas fa-bars"></i>
+                         </span>
+                         <span class="capitalize ml-2 text-white">All Brands</span>
+                        
+                         <div class="absolute opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300 w-full left-0 top-full py-2 bg-white shadow-md divide-y divide-gray-300 divide-dashed">
+                                 <a href="#" class="flex transition  hover:bg-gray-100  px-6 py-2 items-center">
+
+                                      <img src="/images/all brands/Apple-Logo.png" class="w-8 h-8 object-contain" alt="">
+                                      <span class="ml-2 text-gray-600 text-sm">Apple</span>
+
+                                 </a>
+                                 <a href="#" class="flex  transition  hover:bg-gray-100 px-6 py-2 items-center">
+
+                                      <img src="/images/all brands/Xiaomi_logo_(2021-).svg.png" class="w-5 ml-1 h-5 object-contain" alt="">
+                                      <span class="ml-4 text-gray-600 text-sm">Xiami</span>
+
+                                 </a>
+                                 <a href="#" class="flex  transition   hover:bg-gray-100 px-6 py-2 items-center">
+
+                                      <img src="/images/all brands/realme-logo-1553507714.jpg" class="w-5 ml-1 mr-1 h-6 object-contain" alt="">
+                                      <span class="ml-2 text-gray-600 text-sm">Realme</span>
+
+                                 </a>
+                                 <a href="#" class="flex transition     hover:bg-gray-100 px-6 py-2 items-center">
+
+                                      <img src="/images/all brands/vivo.cms" class="w-5 h-5 ml-1 mr-2  object-contain" alt="">
+                                      <span class="ml-2 text-gray-600 text-sm">Vivo</span>
+
+                                 </a>
+                                 <a href="#" class="flex transition  hover:bg-gray-100 px-6 py-2 items-center">
+
+                                      <img src="/images/all brands/oppo.png" class="w-5 h-5 ml-1 mr-2  object-contain" alt="">
+                                      <span class="ml-2 text-gray-600 text-sm">Oppo</span>
+
+                                 </a>
+                                                               
+                         </div>
+
+                     </div>
+                                  
+                 <!-- all category end-->
+
+                  <!-- navbar links -->
+                      <div class="flex items-center flex-grow justify-between pl-12">
+                               
+                              <div class="flex items-center space-x-6 capitalize">
+                                      <a href="index.html" class="text-gray-200 hover:text-white transition">Home</a>
+                                      <a href="shop.html" class="text-gray-200 hover:text-white transition">shop</a>
+                                      <a href="#" class="text-gray-200 hover:text-white transition">about us</a>
+                                      <a href="#" class="text-gray-200 hover:text-white transition">contact us</a>
+                              </div>
+                              <div class="text-gray-200"><a href="login.html" class=" hover:text-white transition">Login </a>/<a href="regester.html"> Register</a></div>  
+
+                      </div>
+                </div>
+               
+         </nav> 
+
+   <!-- navbar end -->
+
+
+
+
+
+   <!--   breadcrums  -->
+   
+   
+   <div class="container flex space-x-2 py-3 text-sm items-center">
+        
+        <a href="index.html"><i class="fa-solid mb-1  fa-house text-red-500"></i></a>
+        <i class="fa-solid fa-angle-right"></i>
+        <h1  class="font-bold  uppercase text-red-500">Products veiw</h1>
+        <i class="fa-solid fa-angle-right"></i>
+        <h1 class="font-semibold uppercase">Realme Narzo 50</h1>
+   </div>
+     
+     
+     <!--   breadcrums  end -->
+  
+         
+
+
+
+
+
+     <!-- veiw product  -->
+
+
+        <div class="container grid grid-cols-2 gap-6">
+          
+           <!-- product img -->
+
+             <div class="">
+                  <img src="/images/hot mobile/Realme-Narzo-50.jpg" class="w-full" alt="">
+                  <div class="grid grid-cols-5 gap-4 mt-4">
+                   <button class="border focus:border rounded-md focus:border-red-500">
+
+                        <img src="/images/hot mobile/Realme-Narzo-50.jpg" class="w-full  rounded-md cursor-pointer  " alt="">
+                   </button>
+                     
+                   <button class="border focus:border rounded-md focus:border-red-500">
+
+                        <img src="/images/hot mobile/Realme-Narzo-50.jpg" class="w-full  rounded-md cursor-pointer  " alt="">
+                   </button>
+                     
+                   <button class="border focus:border rounded-md focus:border-red-500">
+
+                        <img src="/images/hot mobile/Realme-Narzo-50.jpg" class="w-full  rounded-md cursor-pointer  " alt="">
+                   </button>
+                     
+                   <button class="border focus:border rounded-md focus:border-red-500">
+
+                        <img src="/images/hot mobile/Realme-Narzo-50.jpg" class="w-full  rounded-md cursor-pointer  " alt="">
+                   </button>
+                     
+                   <button class="border focus:border rounded-md focus:border-red-500">
+
+                        <img src="/images/hot mobile/Realme-Narzo-50.jpg" class="w-full  rounded-md cursor-pointer  " alt="">
+                   </button>
+                     
+
+
+
+                  </div>
+             </div>
+           
+
+           <!-- product img end-->
+
+          <!-- product content -->
+
+           <div class="space-y-2">
+
+               <h2 class="text-3xl font-medium uppercase">Realme Narzo 50</h2>
+              <div class="flex mb-4 items-center">
+               <div class="flex gap-1 text-sm text-yellow-400">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star"></i></span>
+                    <span><i class="fa-regular fa-star"></i></span>
+             </div>
+            <div class="text-xs text-gray-500 ml-3">(150 Review)</div> 
+          </div>
+          <div>
+               <p class="text-gray-800  space-x-2 font-bold ">
+                    <span>Avilability:</span>
+                    <span class="text-green-600">In Stock</span>
+               </p>
+          </div>
+          <div>
+               <p class="text-gray-800   space-x-2  ">
+                    <span class="font-bold">Brand:</span>
+                    <span>Realme</span>
+               </p>
+          </div>
+          <div>
+               <p class="text-gray-800  space-x-2  ">
+                    <span class="font-bold">Category:</span>
+                    <span>Mobile</span>
+               </p>
+          </div>
+          <div>
+               <p class="text-gray-800  space-x-2 font-bold ">
+                    <span>SKU:</span>
+                    <span class="font-normal">BE45VGRT</span>
+               </p>
+          </div>
+          <div class="py-2">
+               <p class="text-gray-800  space-x-2  font-bold ">
+                    <span class="text-red-500 text-2xl">17000Tk</span>
+                    <span class="line-through" >22000Tk</span>
+               </p>
+          </div>
+           <div class="py-2 text-gray-800 w-10/12">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id, voluptatem aspernatur mollitia ducimus pariatur nobis 
+           </div>
+           <div>
+               <p class="text-gray-800 my-1 font-bold">Colors</p>
+               <div class="space-x-1">
+                     <button   class="rounded-sm  w-5 h-5 bg-red-500 focus:ring-2 focus:ring-red-700 ring-offset-1"></button>
+                     <button   class="rounded-sm  w-5 h-5 bg-white border focus:ring-2 focus:ring-gray-700  ring-offset-1"></button>
+                    <button   class="rounded-sm  w-5 h-5 bg-gray-900 border focus:ring-2 focus:ring-gray-900 ring-offset-1"></button>
+               </div>
+              
+           </div>
+           <div>
+               
+           </div>
+
+
+
+     </div>
+
+          <!-- product content end-->
+
+           
+
+
+
+
+        </div>
+      
+
+     <!-- veiw product end  -->
+
+
+
+
+
+     <hr class="mt-5">
+
+     <div class="container mt-10 ">
+                 
+              <div class="grid grid-cols-5">
+                       
+                      <div class="leftside col-span-2 w-8/12">
+                             
+                             <h1 class="text-2xl font-bold my-4">Mobile <span class="text-red-500">Vai</span></h1>
+                             <p class="my-2 text-gray-800 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eaque labore,</p>
+                             <!-- icons -->
+                             <div class="flex space-x-6 my-7 text-gray-600">
+                                    <i class="fa-brands hover:text-gray-700 fa-facebook-f"></i>
+                                    <i class="fa-brands hover:text-gray-700 fa-twitter"></i>
+                                    <i class="fa-brands hover:text-gray-700 fa-instagram"></i>
+                                    <i class="fa-brands fa-linkedin-in hover:text-gray-700"></i>
+                             </div>
+                             <!-- icons end -->
+ 
+                      </div>
+                      <div class="rightside col-span-3   grid grid-cols-4 w-full">
+ 
+                             <div class=" text-gray-500 space-y-3 uppercase tracking-wider font-semibold text-sm ">
+                                       
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+ 
+                             </div>
+                             <div class=" text-gray-500 space-y-3 uppercase tracking-wider font-semibold text-sm ">
+                                       
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+ 
+                             </div>
+                             <div class=" text-gray-500 space-y-3 uppercase tracking-wider font-semibold text-sm ">
+                                       
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+ 
+                             </div>
+                             <div class=" text-gray-500 space-y-3 uppercase tracking-wider font-semibold text-sm ">
+                                       
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+                                    <h1><a href="#">Deamo</a></h1>
+ 
+                             </div>
+                           
+ 
+                      </div>
+ 
+              </div>
+ 
+ 
+     </div>
+
+
+
+ <!-- footer -->
+
+
+ <footer class="bg-gray-800 mt-10   py-2">
+    <div class="container flex justify-between">
+      <div class="text-white text-sm items-center "><p>@ Moble vai-All Right Reserved</p></div>
+      <div class="" ><img src="/images/vasa cardifdddd.jpg" class="w-auto  h-5 bg-gray-800" alt=""></div>
+
+    </div>
+   
+   </footer>
+
+<!-- footer end -->
+
+ 
+
+
+   </body>
+
+
+   </html>
